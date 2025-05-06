@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi</title>
+    <style>
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+            transition-property: background-color, width, height;
+            transition-duration: 0.3s, 0.5s, 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .kotak:hover {
+            background-color: lightcoral;
+            width: 120px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak">Hover me!</div>
+</body>
+</html>

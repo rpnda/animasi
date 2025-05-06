@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS tanpa library</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .element {
+            background-color: #e0f7fa;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #26a69a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contoh Animasi AOS </h2>
+
+        <div class="element" data-aos="fade-up">
+            Fade Up
+        </div>
+
+        <div class="element" data-aos="slide-left" data-aos-duration="1000">
+            Slide Left (Durasi 1000ms)
+        </div>
+
+        <div class="element" data-aos="zoom-in" data-aos-delay="300">
+            Zoom In (Delay 300ms)
+        </div>
+
+        <div class="element" data-aos="flip-right" data-aos-easing="ease-in-out-cubic">
+            Flip Right (Easing: ease-in-out-cubic)
+        </div>
+
+        <div class="element" data-aos="fade-down-right" data-aos-offset="200">
+            Fade Down Right (Offset: 200px)
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

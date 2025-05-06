@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerak Putar</title>
+    <style>
+        .lingkaran {
+            width: 80px;
+            height: 80px;
+            background-color: purple;
+            border-radius: 50%;
+            opacity: 1;
+            transform: scale(1);
+            animation-name: memudarMembesar;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes memudarMembesar {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0.3;
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lingkaran"></div>
+</body>
+</html>
